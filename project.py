@@ -95,7 +95,8 @@ def build(args):
         ])
         print(f"Run: {cmd}")
         subprocess.check_output(cmd, shell=True)
-
+    
+    """
     if args.subwork is None or 'mesh_fusion' in args.subwork:
         print("Building pyfusion...")
         mesh_fusion_path = os.path.join(root, 'external', 'mesh_fusion')
@@ -126,6 +127,7 @@ def build(args):
         ])
         print(f"Run: {cmd}")
         subprocess.check_output(cmd, shell=True)
+    """
 
     if args.subwork is None or 'ldif2mesh' in args.subwork:
         print("Building ldif2mesh...")

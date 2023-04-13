@@ -16,7 +16,7 @@
 
 # Get the cuda version to figure out which architectures
 # to build for:
-version=($(python get_cuda_version.py))
+version=($(python3 get_cuda_version.py))
 major_version=${version[0]}
 minor_version=${version[1]}
 echo "Major version is ${major_version} and minor version is ${minor_version}"
